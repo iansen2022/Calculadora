@@ -5,7 +5,7 @@ public class Calculadora {
 
 	public static void main(String[] args) {
 		double n1, n2;
-		double soma, sutracao, multiplicacao, divisao;
+		double soma, subtracao, multiplicacao, divisao;
 		int op;
 		Scanner entrada = new Scanner (System.in);
 		
@@ -26,6 +26,21 @@ public class Calculadora {
 		case 1: 
 			soma = n1+n2;
 			System.out.println("A soma é: "+soma);
+			break;
+		
+		case 2: 
+			subtracao = n1-n2;
+			System.out.println("A subitração é: "+subtracao);
+			break;
+			
+		case 3: 
+			multiplicacao = n1*n2;
+			System.out.println("A multiplicação é: "+multiplicacao);
+			break;
+		
+		case 4: 
+			divisao = n1/n2;
+			System.out.println("A divisão é: "+divisao);
 			break;
 
 		}
