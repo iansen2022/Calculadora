@@ -39,10 +39,18 @@ public class Calculadora {
 			break;
 		
 		case 4: 
-			divisao = n1/n2;
-			System.out.println("A divisão é: "+divisao);
+			if (n1<n2) {
+				System.out.println("Impossível de realizar o cálculo");
+			}
+			else {
+				divisao = n1/n2;
+				System.out.println("A divisão é: "+divisao);
+			}
 			break;
-
+			
+		default:
+			System.out.println("Operação inválida");
+			
 		}
 		
 
