@@ -19,7 +19,8 @@ public class Calculadora {
 		System.out.println("[2]  -  Subtrair");
 		System.out.println("[3]  -  Multiplicar");
 		System.out.println("[4]  -  Dividir");
-		System.out.println("[5]  -  Porcentagem");
+		System.out.println("[5]  -  Soma Porcentagem");
+		System.out.println("[6]  -  Subtrai Porcentagem");
 		System.out.println(">>>>>>>>Digite sua opção");
 		op = entrada.nextInt();
 		
@@ -50,9 +51,13 @@ public class Calculadora {
 			break;
 		
 		case 5: 
-			System.out.println("Vai calcular a Porcentagem de n2");
 			porcentagem = (n1*(n2/100))+n1;
-			System.out.println("A Porcentagem é: "+porcentagem);
+			System.out.println(+n1+" mais " +n2+"% são: "+porcentagem);
+			break;
+			
+		case 6: 
+			porcentagem = (n1*(n2/100))-n1;
+			System.out.println(+n1+" menos " +n2+"% são: "+porcentagem);
 			break;
 			
 		default:
