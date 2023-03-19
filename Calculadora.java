@@ -5,7 +5,7 @@ public class Calculadora {
 
 	public static void main(String[] args) {
 		double n1, n2;
-		double soma, subtracao, multiplicacao, divisao;
+		double soma, subtracao, multiplicacao, divisao,porcentagem;
 		int op;
 		Scanner entrada = new Scanner (System.in);
 		
@@ -19,6 +19,7 @@ public class Calculadora {
 		System.out.println("[2]  -  Subtrair");
 		System.out.println("[3]  -  Multiplicar");
 		System.out.println("[4]  -  Dividir");
+		System.out.println("[5]  -  Porcentagem");
 		System.out.println(">>>>>>>>Digite sua opção");
 		op = entrada.nextInt();
 		
@@ -47,9 +48,16 @@ public class Calculadora {
 				System.out.println("A divisão é: "+divisao);
 			}
 			break;
+		
+		case 5: 
+			System.out.println("Vai calcular a Porcentagem de n2");
+			porcentagem = (n1*(n2/100))+n1;
+			System.out.println("A Porcentagem é: "+porcentagem);
+			break;
 			
 		default:
 			System.out.println("Operação inválida");
+			
 			
 		}
 		
